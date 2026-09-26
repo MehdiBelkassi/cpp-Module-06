@@ -29,7 +29,7 @@ bool ScalarConverter::isInt(const std::string &param)
     return true;
 }
 
-bool isFloat(const std::string &param)
+bool ScalarConverter::isFloat(const std::string &param)
 {
     if (param.empty())
         return false;
@@ -59,7 +59,7 @@ bool isFloat(const std::string &param)
     return true;
 }
 
-bool isDouble(const std::string &param)
+bool ScalarConverter::isDouble(const std::string &param)
 {
     if (param.empty())
         return false;

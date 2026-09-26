@@ -1,13 +1,13 @@
 #include "ScalarConverter.hpp"
 
-int main()
+
+int main(int argc, char **argv)
 {
-    ScalarConverter f;
-
-    // char d = static_cast<char>(100000); // int to double   
-
-    // printf("%c", d);
-
-    printf("%d", f.isChar("ab"));
-    return 0;
+	(void)argv;
+	if (argc != 2)
+	{
+		std::cerr << "Usage: ./convert <literal>" << std::endl;
+		return (1);
+	}
+	ScalarConverter::convert(argv[1]);
 }
