@@ -3,7 +3,7 @@ SRC = main.cpp Base.cpp
 OBJ = $(SRC:.cpp=.o)
 CXX = c++
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98
-HPP = Serializer.hpp A.hpp B.hpp Base.hpp
+HPP = A.hpp B.hpp Base.hpp
 
 all: $(NAME)
 

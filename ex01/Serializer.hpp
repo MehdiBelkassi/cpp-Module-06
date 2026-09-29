@@ -8,7 +8,7 @@
 
 typedef struct Data
 {
-	int a;
+	int value;
 } Data;
 
 

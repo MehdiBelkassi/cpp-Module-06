@@ -5,12 +5,14 @@
 #include <cstdlib>
 #include <iostream>
 #include <typeinfo>
+#include <iostream>
 
 Base *generate()
 {
 	srand(static_cast<unsigned int>(time(0)));
 
-	switch (rand() % 3 + 1) {
+	switch (rand() % 3 + 1)
+	{
 		case 1:
 			return (new A());
 		case 2:
